@@ -1,0 +1,13 @@
+require.config({
+    baseUrl:"../js/",
+    paths:{
+        "index":"app/index",
+        "addpic":"conmon/addpic"
+    }
+})
+require(["addpic","index"],function(addpicobj){
+    addpicobj.init({
+         "size":1,
+         "parent":"#counts"
+    })
+})()
